@@ -351,6 +351,12 @@ ul {
 /* =============
     Typography
 ============= */
+body {
+  font-family: 'Outfit', sans-serif; }
+
+h1 {
+  font-family: 'Italiana', serif; }
+
 /* =============
     Buttons
 ============= */
@@ -387,8 +393,10 @@ textarea {
 #hero #heroimg {
   width: 100%; }
 
-#info div h3 {
-  position: center; }
+#info div {
+  background-color: var(--laurel); }
+  #info div h3 {
+    position: center; }
 
 #joinourteam div {
   display: block; }
