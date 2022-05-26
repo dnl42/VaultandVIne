@@ -310,28 +310,6 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/dev\/js\/section-2.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 1,
-      "oAP" : "\/dev\/js\/section-2-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/dev\/js\/section-4.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 1,
-      "oAP" : "\/dev\/js\/section-4-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
     "\/dev\/scss\/base\/_base.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -361,18 +339,6 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 1
-    },
-    "\/dev\/scss\/base\/_typography.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/scss\/base\/_typography-min.css",
-      "oF" : 0,
-      "pg" : 0
     },
     "\/dev\/scss\/base\/_typography.scss" : {
       "aP" : 0,

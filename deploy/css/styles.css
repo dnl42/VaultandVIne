@@ -357,6 +357,14 @@ body {
 h1 {
   font-family: 'Italiana', serif; }
 
+h1, h2, h3, h4, h5 {
+  padding: 0;
+  margin: 0; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
 /* =============
     Buttons
 ============= */
@@ -390,13 +398,14 @@ textarea {
 /* =============
     Footer
 ============= */
+footer {
+  background-color: var(--dusk); }
+
 #hero #heroimg {
   width: 100%; }
 
 #info div {
   background-color: var(--laurel); }
-  #info div h3 {
-    position: center; }
 
 #joinourteam div {
   display: block; }
