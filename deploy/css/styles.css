@@ -327,7 +327,27 @@ ul {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". grid ."; }
+  @media (min-width: 1400px) {
+    .css-grid-global {
+      rid-template-columns: auto 1440px auto; } }
+  .css-grid-global > div {
+    grid-area: grid; }
 
+.show-for-md {
+  display: none; }
+  @media (min-width: 768px) {
+    .show-for-md {
+      display: block; } }
+.show-for-lg {
+  display: none; }
+  @media (min-width: 1024px) {
+    .show-for-lg {
+      display: block; } }
+.show-for-xl {
+  display: none; }
+  @media (min-width: 1200px) {
+    .show-for-xl {
+      display: block; } }
 /* =============
     Typography
 ============= */
@@ -364,5 +384,15 @@ textarea {
 /* =============
     Footer
 ============= */
+#hero #heroimg {
+  width: 100%; }
+
+#info div h3 {
+  position: center; }
+
 #joinourteam div {
   display: block; }
+
+#services article ul {
+  display: grid;
+  gap: 16px; }
