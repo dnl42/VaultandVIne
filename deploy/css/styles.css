@@ -423,12 +423,21 @@ header div {
 footer {
   background-color: var(--dusk);
   color: var(--white); }
+  footer h1 {
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 36px; }
+  footer article p {
+    padding-bottom: 36px;
+    text-align: center; }
 
-.footer-grid {
+.footer-grid div ul {
+  text-align: center;
   display: grid;
-  grid-area: footer-grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "r1  r2 r3 r4"; }
+  grid-template-columns: repeat(2, minmax(130px, 2fr));
+  grid-template-rows: repeat(2, minmax(130px, 2fr)); }
+  .footer-grid div ul li img {
+    padding-bottom: 16px; }
 
 #hero div img {
   width: 100%; }
@@ -465,16 +474,18 @@ footer {
 #plantimg div {
   display: none; }
 
-#services h1 {
-  padding-bottom: 16px; }
-
-#services article ul {
-  display: grid;
-  gap: 16px; }
-  #services article ul li {
+#services {
+  padding-bottom: 56px; }
+  #services h1 {
+    padding-bottom: 16px;
+    text-align: center; }
+  #services article ul {
     display: grid;
-    grid-template-columns: 70px auto 70px;
-    grid-template-areas: ". services ."; }
+    gap: 16px; }
+    #services article ul li {
+      text-align: center; }
+      #services article ul li h2 {
+        padding: 24px 0 56px; }
 
 #signup {
   padding-bottom: 56px; }

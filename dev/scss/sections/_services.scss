@@ -1,26 +1,28 @@
-#services{
-   h1{
-        padding-bottom: 16px ;
+#services {
+    padding-bottom: 56px;
+
+    h1 {
+        padding-bottom: 16px;
+        text-align: center;
     }
 
-    article{
-        ul{
+    article {
+
+        ul {
             display: grid;
             gap: 16px;
-            
 
-        li{
-            display: grid;
-            grid-template-columns: 70px auto 70px;
-            grid-template-areas: ". services .";
-            
+
+            li {
+                text-align: center;
+
+                h2 {
+                    padding: 24px 0 56px;
+                }
+
+            }
         }
-    }
-      
+
     }
 
-
-
-        
-    }
- 
+}

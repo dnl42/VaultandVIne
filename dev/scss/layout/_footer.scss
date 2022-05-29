@@ -4,15 +4,39 @@
 footer{
     background-color: var(--dusk);
     color: var(--white);
+    h1{
+        text-align: center;
+        padding-top: 24px;
+        padding-bottom: 36px;
+    }
+    article{
+        p{
+            padding-bottom: 36px;
+            text-align: center;
+        }
+    }
 }
 
 .footer-grid{
-    display: grid;
-    grid-area: footer-grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-        "r1  r2
-        r3 r4";
+    div{
+        ul{
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(130px, 2fr));
+            grid-template-rows: repeat(2, minmax(130px, 2fr));
+
+            li{
+                img{
+                    padding-bottom: 16px;
+                }
+              
+            }
+        }
+        
+        
+
+    }
+    
 }
 #r1{
 
