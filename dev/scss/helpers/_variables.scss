@@ -19,15 +19,18 @@ $screen-xl-min: 1200px;
 $screen-xxl-min: 1400px;
 
 // Colors
-$white: #fff;
-$black: #000;
-$cream: #e8d7c7;
-$beige: #c9b19e;
-$dusk: #b89078;
-$hippo: #abaa9b;
-$laurel: #a7b8a1;
-$parkview: #47493e;
-$plaza: #9ca76f;
-$cliffside: #6f8667;
-$basecamp: #565a38;
-$leaf: #4b5937;
+:root{
+    --white: #fff;
+    --black: #000;
+    --cream: #e8d7c7;
+    --beige: #c9b19e;
+    --dusk: #b89078;
+    --hippo: #abaa9b;
+    --laurel: #a7b8a1;
+    --parkview: #47493e;
+    --plaza: #9ca76f;
+    --cliffside: #6f8667;
+    --basecamp: #565a38;
+    --leaf: #4b5937;
+    
+}

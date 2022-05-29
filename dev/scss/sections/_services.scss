@@ -1,16 +1,26 @@
 #services{
-
+   h1{
+        padding-bottom: 16px ;
+    }
 
     article{
-
-
         ul{
             display: grid;
             gap: 16px;
-            li{
-                
-            }
+            
+
+        li{
+            display: grid;
+            grid-template-columns: 70px auto 70px;
+            grid-template-areas: ". services .";
+            
         }
     }
+      
+    }
+
+
+
+        
+    }
  
-}

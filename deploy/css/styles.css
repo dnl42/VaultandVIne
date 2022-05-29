@@ -9,6 +9,20 @@ html {
 /* =============
     Variables
 ============= */
+:root {
+  --white: #fff;
+  --black: #000;
+  --cream: #e8d7c7;
+  --beige: #c9b19e;
+  --dusk: #b89078;
+  --hippo: #abaa9b;
+  --laurel: #a7b8a1;
+  --parkview: #47493e;
+  --plaza: #9ca76f;
+  --cliffside: #6f8667;
+  --basecamp: #565a38;
+  --leaf: #4b5937; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -401,15 +415,28 @@ textarea {
 footer {
   background-color: var(--dusk); }
 
-#hero #heroimg {
+#hero div img {
   width: 100%; }
 
-#info div {
-  background-color: var(--laurel); }
+#info {
+  background-color: var(--laurel);
+  padding: 24px 16px 24px 16px; }
+  #info div p {
+    padding: 16px; }
 
 #joinourteam div {
   display: block; }
 
+#plantimg div {
+  display: none; }
+
+#services h1 {
+  padding-bottom: 16px; }
+
 #services article ul {
   display: grid;
   gap: 16px; }
+  #services article ul li {
+    display: grid;
+    grid-template-columns: 70px auto 70px;
+    grid-template-areas: ". services ."; }
