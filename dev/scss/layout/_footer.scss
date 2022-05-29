@@ -3,4 +3,26 @@
 ============= */
 footer{
     background-color: var(--dusk);
+    color: var(--white);
+}
+
+.footer-grid{
+    display: grid;
+    grid-area: footer-grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        "r1  r2
+        r3 r4";
+}
+#r1{
+
+}
+#r2{
+
+}
+#r3{
+
+}
+#r4{
+
 }

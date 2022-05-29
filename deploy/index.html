@@ -15,17 +15,24 @@
 <body>
          <header class="css-grid-global">
              <div>
-                 <img src="img/icons/bunnylogo.svg" alt="bunny logo">
-                 <h1>Vault + Vine</h1>
-                 <h2>East Falls</h2>
+                 <aside>
+                     <img src="img/icons/lines.svg" alt="menu icon">
+                     <section>
+                         <img src="img/icons/bunnylogo.svg" alt="bunny logo">
+                         <h1>Vault + Vine</h1>
+                         <h2>East Falls</h2>
+                     </section>
+                     <img src="img/icons/search.svg" alt="">
+                     <img src="img/icons/shoppingbag.svg" alt="">
+                 </aside>
              </div>
          </header>
-        <section id="hero" class="css-grid-global">
+        <section id="hero" class="css-grid-global content-spacing">
                      <div>
                          <img src="img/hero/heroimg.jpeg" alt="hero image" id="heroimg">
                      </div>
                  </section>
-        <section id="services" >
+        <section id="services" class="content-spacing" >
                              <section class="css-grid-global">
                                  <div>
                                      <h1>Services</h1>
@@ -69,7 +76,7 @@
                              </article>
                              
                          </section>
-        <section id="info" >
+        <section id="info" class="content-spacing" >
                                      <div>
                                          <h3>Vault + Vine is a floral studio and thoughtfully curated retail space in East Falls, Philadelphia. Founded in 2017, we offer:</h3>
                                          <p>Floral design services for weddings and events; Custom floral arrangements made daily and delivered; Plants for the home and garden; A collection of specialty homegoods, gifts, and objects (many sourced from Philadelphia-area creators); A café and gathering place. At the heart of our shop is love for our community 
@@ -78,36 +85,46 @@
                                      </div>
                                      
                                  </section>
-        <section id="question" class="css-grid-global">
+        <section id="question" class="css-grid-global content-spacing">
                                              <img src="img/other/greenbox1.png" alt="">
                                              <div>
-                                                 <h1>Ask us a Question About...</h1>
+                                                 <h1>Ask us a <br>Question About...</h1>
                                                  <ul>
                                                      <li>
-                                                         <p>floral arrangements</p>
-                                                         <button></button>
+                                                         <aside>
+                                                             <p>floral arrangements</p>
+                                                             <button></button>
+                                                         </aside>
                                                      </li>
                                          
                                                      <li>
-                                                         <p>local deliveries</p>
-                                                         <button></button>
+                                                         <aside>
+                                                             <p>local deliveries</p>
+                                                             <button></button>
+                                                         </aside>
                                                      </li>
                                          
                                                      <li>
-                                                         <p>upcoming events</p>
-                                                         <button></button>
+                                                         <aside>
+                                                             <p>upcoming events</p>
+                                                             <button></button>
+                                                         </aside>
                                                      </li>
                                          
                                                      <li>
-                                                         <p>plant care</p>
-                                                         <button></button>
+                                                         <aside>
+                                                             <p>plant care</p>
+                                                             <button></button>
+                                                         </aside>
                                                      </li>
                                                  </ul>
                                          
                                          
                                                  <form action="#">
-                                                     <input type="text" placeholder="Email Address">
-                                                     <button>send</button>
+                                                     <section>
+                                                         <input type="text" placeholder="Email Address">
+                                                         <button>send</button>
+                                                     </section>
                                                  </form>
                                              </div>
                                          </section>
@@ -129,40 +146,56 @@
                                                      </div>
                                                  
                                                  </section>
-        <section id="signup">
-                                                             <h1>Sign Up</h1>
-                                                             <p>For Our Newsletter to get exclusive rewards and event updates!</p>
-                                                             <form action="#">
-                                                                 <input type="text" placeholder="Email Address">
-                                                                 <button>send</button>
-                                                             </form>
+        <section id="signup" class="css-grid-global content-spacing">
+                                                             <img src="img/other/greenbox2.png" alt="">
+                                                             <div>
+                                                                 <h1>Sign Up</h1>
+                                                                 <p>Sign up for our Newsletter <br>to get exclusive rewards <br>and event updates!</p>
+                                                                 <form action="#">
+                                                                     <section>
+                                                                         <input type="text" placeholder="Email Address">
+                                                                         <button>send</button>
+                                                                     </section>
+                                                                 </form>
+                                                             </div>
                                                          </section>
 
 
-     <footer>
-         <h1>Contact</h1>
-         <ul>
-             <li>
-                 <img src="img/icons/location.svg" alt="">
-                 <address>3507 Midvale Avenue <br>Philadelphia, PA 19129</address>
-             </li>
-     
-             <li>
-                 <img src="img/icons/clock.svg" alt="">
-                 <p>8am-3pm<br>Thursday-Sunday</p>
-             </li>
-     
-             <li>
-                 <img src="img/icons/phone.svg" alt="">
-                 <a href="#">267 331 6292</a>
-             </li>
-     
-             <li>
-                 <img src="img/icons/email.svg" alt="">
-                 <a href="#">hello@vaultandvine.co</a>
-             </li>
-         </ul>
-         <p>Account | Resources | Shipping & Returns | Directions</p>
-     </footer>
+     <footer class="footer-grid">
+         <div>
+             <h1>Contact</h1>
+             <ul>
+                 <li id="1fr">
+                     <section>
+                         <img src="img/icons/location.svg" alt="">
+                         <address>3507 Midvale Avenue <br>Philadelphia, PA 19129</address>    
+                     </section>
+                      </li>
+         
+                 <li id="2fr">
+                     <section>
+                         <img src="img/icons/clock.svg" alt="">
+                         <p>8am-3pm<br>Thursday-Sunday</p>
+                     </section>
+                 </li>
+         
+                 <li id="3fr">
+                     <section>
+                         <img src="img/icons/phone.svg" alt="">
+                         <a href="#">267 331 6292</a>
+                     </section>
+                 </li>
+         
+                 <li id="4fr">
+                     <section>
+                         <img src="img/icons/email.svg" alt="">
+                         <a href="#">hello@vaultandvine.co</a>
+                     </section>
+                 </li>
+             </ul>
+             <p>Account | Resources | Shipping & Returns | Directions</p>
+         
+         </div>
+         </footer>
      <script src="js/scripts-min.js"></script>
 </body>

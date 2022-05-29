@@ -337,6 +337,9 @@ ul {
   ul li {
     list-style: none; }
 
+.content-spacing {
+  padding-top: 56px; }
+
 .css-grid-global {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -409,11 +412,23 @@ textarea {
 /* =============
     Header
 ============= */
+header div {
+  text-align: center; }
+  header div aside {
+    display: flex; }
+
 /* =============
     Footer
 ============= */
 footer {
-  background-color: var(--dusk); }
+  background-color: var(--dusk);
+  color: var(--white); }
+
+.footer-grid {
+  display: grid;
+  grid-area: footer-grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "r1  r2 r3 r4"; }
 
 #hero div img {
   width: 100%; }
@@ -425,7 +440,27 @@ footer {
     padding: 16px; }
 
 #joinourteam div {
-  display: block; }
+  display: none; }
+
+#question img {
+  max-width: 358px;
+  padding-left: 16px;
+  padding-right: 16px; }
+
+#question div h1 {
+  text-align: center;
+  margin-top: -20px;
+  padding-bottom: 48px; }
+
+#question div ul li aside {
+  display: flex; }
+  #question div ul li aside p {
+    padding-left: 50px;
+    padding-bottom: 24px; }
+
+#question div form {
+  padding-left: 32px;
+  padding-top: 24px; }
 
 #plantimg div {
   display: none; }
@@ -440,3 +475,19 @@ footer {
     display: grid;
     grid-template-columns: 70px auto 70px;
     grid-template-areas: ". services ."; }
+
+#signup {
+  padding-bottom: 56px; }
+  #signup img {
+    max-width: 358px;
+    padding-left: 16px;
+    padding-right: 16px; }
+  #signup div h1 {
+    text-align: center;
+    margin-top: -20px;
+    padding-bottom: 32px; }
+  #signup div p {
+    text-align: center; }
+  #signup div form {
+    padding-left: 32px;
+    padding-top: 24px; }

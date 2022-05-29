@@ -1,3 +1,22 @@
 #signup{
-    
+    padding-bottom: 56px;
+    img{
+        max-width: 358px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    div{
+        h1{
+            text-align: center;
+            margin-top: -20px;
+            padding-bottom: 32px;
+           }
+           p{
+               text-align: center;
+           }
+           form{
+            padding-left: 32px;
+            padding-top: 24px;
+        }
+    }
 }

@@ -1,7 +1,33 @@
 #question{
-    
+    img{
+        max-width: 358px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+   div{
+       h1{
+        text-align: center;
+        margin-top: -20px;
+        padding-bottom: 48px;
+       }
+       ul{
+           li{
+               aside{
+                   display: flex;
+                   p{
+                       padding-left: 50px;
+                       padding-bottom: 24px;
+                   }
+                
+               }
+           }
+       }
+       form{
+           padding-left: 32px;
+           padding-top: 24px;
+       }
+   }
 }
-
 #plantimg{
     div{
         display: none

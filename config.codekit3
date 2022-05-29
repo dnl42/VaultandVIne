@@ -64,6 +64,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/deploy\/img\/icons\/lines.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/icons\/lines.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/icons\/location.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -109,6 +119,19 @@
       "iS" : 1571,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/other\/greenbox1.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/other\/greenbox2.png" : {
+      "ft" : 32768,
+      "iS" : 951,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/other\/greenbox2.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
