@@ -30,7 +30,19 @@
 }
 #plantimg{
     div{
-        display: none
+        img{
+            height: 185px;
+            width: 291px;
+        }
+
+        // display: grid;
+        // grid-template-columns: 24px auto 24px;
+        padding-left: 118px;
+        
+       
+        
+    
     }
  
 }
+

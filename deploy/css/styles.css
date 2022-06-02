@@ -436,6 +436,10 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, minmax(130px, 2fr));
   grid-template-rows: repeat(2, minmax(130px, 2fr)); }
+  @media (min-width: 768px) {
+    .footer-grid div ul {
+      grid-template-columns: 16px auto 16px auto;
+      grid-template-rows: none; } }
   .footer-grid div ul li img {
     padding-bottom: 16px; }
 
@@ -445,11 +449,31 @@ footer {
 #info {
   background-color: var(--laurel);
   padding: 24px 16px 24px 16px; }
+  #info div h3 {
+    text-align: center;
+    padding: 16px; }
+  #info div ul {
+    padding-left: 36px; }
+    #info div ul li {
+      list-style-type: circle; }
+      #info div ul li p {
+        padding: 4px; }
   #info div p {
     padding: 16px; }
 
-#joinourteam div {
-  display: none; }
+#joinourteam {
+  padding-left: 118px; }
+  #joinourteam div {
+    background-color: var(--beige);
+    border-radius: 16px;
+    height: 181px;
+    width: 596px;
+    text-align: center; }
+    #joinourteam div h1 {
+      font-size: 3rem;
+      padding-top: 24px; }
+    #joinourteam div p {
+      padding-top: 16px; }
 
 #question img {
   max-width: 358px;
@@ -472,7 +496,10 @@ footer {
   padding-top: 24px; }
 
 #plantimg div {
-  display: none; }
+  padding-left: 118px; }
+  #plantimg div img {
+    height: 185px;
+    width: 291px; }
 
 #services {
   padding-bottom: 56px; }
@@ -482,11 +509,19 @@ footer {
   #services article ul {
     display: grid;
     gap: 16px; }
+    @media (min-width: 768px) {
+      #services article ul {
+        grid-area: services;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 130px;
+        padding-right: 130px; } }
     #services article ul li {
       text-align: center; }
       #services article ul li h2 {
         padding: 24px 0 56px; }
-
+        @media (min-width: 768px) {
+          #services article ul li h2 {
+            padding: 0px; } }
 #signup {
   padding-bottom: 56px; }
   #signup img {

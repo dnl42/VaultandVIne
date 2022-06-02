@@ -3,7 +3,24 @@
     padding: 24px 16px 24px 16px;
  
     div{
-  
+        h3{
+            text-align: center;
+            padding: 16px;
+        }
+        ul{
+            padding-left: 36px;
+            li{
+                list-style-type: circle;
+                
+                marker{
+        
+                }
+                p{
+                    padding: 4px;
+                }
+            }
+        }
+       
         p{
             padding: 16px;
         }

@@ -25,6 +25,11 @@ footer{
             grid-template-columns: repeat(2, minmax(130px, 2fr));
             grid-template-rows: repeat(2, minmax(130px, 2fr));
 
+            @include md{
+                grid-template-columns: 16px auto 16px auto ;
+                grid-template-rows: none;
+            }
+
             li{
                 img{
                     padding-bottom: 16px;

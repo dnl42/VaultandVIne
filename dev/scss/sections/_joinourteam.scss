@@ -1,6 +1,21 @@
 #joinourteam{
+    padding-left: 118px;
+    
     div{
-        display: none;
+        background-color: var(--beige);
+        border-radius: 16px;
+        height: 181px;
+        width: 596px;
+        
+       text-align: center;
+       h1{
+        font-size: rem-calc(48);
+        padding-top: 24px;
+       }
+       p{
+        padding-top: 16px;
+
+       }
     }
     
 }

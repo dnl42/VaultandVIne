@@ -12,12 +12,23 @@
             display: grid;
             gap: 16px;
 
+            @include md{
+                grid-area: services;
+                grid-template-columns: repeat(2,1fr) ;
+                padding-left: 130px;
+                padding-right: 130px;
+            }
+
 
             li {
                 text-align: center;
+              
 
                 h2 {
                     padding: 24px 0 56px;
+                    @include md{
+                        padding: 0px;
+                    }
                 }
 
             }
