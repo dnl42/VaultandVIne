@@ -140,15 +140,31 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/other\/illustration.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/deploy\/img\/other\/illustration.svg",
+    "\/deploy\/img\/other\/illustration.png" : {
+      "ft" : 32768,
+      "iS" : 23835,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/other\/illustration.png",
       "oF" : 0,
+      "oIPL" : 0,
       "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/other\/illustration2.png" : {
+      "ft" : 32768,
+      "iS" : 22997,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/other\/illustration2.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/deploy\/img\/other\/plantimg_1.jpg" : {
       "ft" : 16384,

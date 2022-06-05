@@ -1,36 +1,84 @@
-#question{
-    img{
-        max-width: 358px;
-        padding-left: 16px;
-        padding-right: 16px;
+#question {
+
+    .rectangle {
+        width: 347px;
+        height: 300px;
+        border: 5.5px solid;
+        border-color: var(--cliffside);
+        margin-left: 16px;
+
+        @include md {
+            width: 756px;
+            height: 290px;
+            margin-left: 28px;
+        }
     }
-   div{
-       h1{
-        text-align: center;
-        margin-top: -20px;
-        padding-bottom: 48px;
-       }
-       ul{
-           li{
-               aside{
-                   display: flex;
-                   p{
-                       padding-left: 50px;
-                       padding-bottom: 24px;
-                   }
-                
-               }
-           }
-       }
-       form{
-           padding-left: 32px;
-           padding-top: 24px;
-       }
-   }
+
+    div {
+        background-color: var(--white);
+        width: 272px;
+        height: 316px;
+        margin-left: 40px;
+
+        @include md {
+            width: 530px;
+            margin-left: 135px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: -20px;
+            padding-bottom: 48px;
+
+            @include md {
+                font-size: rem-calc(48);
+            }
+
+            .hide-br {
+                @include sm {
+                    display: show;
+
+                    @include md {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        ul {
+            li {
+                aside {
+                    display: flex;
+
+                    p {
+                        padding-left: 50px;
+                        padding-bottom: 24px;
+
+                        @include md {
+                            font-size: rem-calc(18);
+                            align-content: center;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        form {
+            padding-left: 20px;
+            padding-top: 24px;
+
+            @include md {
+                padding-left: 140px;
+                font-size: rem-calc(18);
+            }
+        }
+    }
 }
-#plantimg{
-    div{
-        img{
+
+#plantimg {
+    div {
+        img {
             height: 185px;
             width: 291px;
         }
@@ -38,11 +86,10 @@
         // display: grid;
         // grid-template-columns: 24px auto 24px;
         padding-left: 118px;
-        
-       
-        
-    
-    }
- 
-}
 
+
+
+
+    }
+
+}

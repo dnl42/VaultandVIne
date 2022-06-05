@@ -12,6 +12,7 @@ footer{
     article{
         p{
             padding-bottom: 36px;
+            padding-top: 36px;
             text-align: center;
         }
     }
@@ -26,7 +27,7 @@ footer{
             grid-template-rows: repeat(2, minmax(130px, 2fr));
 
             @include md{
-                grid-template-columns: 16px auto 16px auto ;
+                grid-template-columns: auto auto auto auto;
                 grid-template-rows: none;
             }
 

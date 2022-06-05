@@ -429,6 +429,7 @@ footer {
     padding-bottom: 36px; }
   footer article p {
     padding-bottom: 36px;
+    padding-top: 36px;
     text-align: center; }
 
 .footer-grid div ul {
@@ -438,7 +439,7 @@ footer {
   grid-template-rows: repeat(2, minmax(130px, 2fr)); }
   @media (min-width: 768px) {
     .footer-grid div ul {
-      grid-template-columns: 16px auto 16px auto;
+      grid-template-columns: auto auto auto auto;
       grid-template-rows: none; } }
   .footer-grid div ul li img {
     padding-bottom: 16px; }
@@ -463,6 +464,15 @@ footer {
 
 #joinourteam {
   padding-left: 118px; }
+  #joinourteam #image1 {
+    transform: rotate(-47deg);
+    margin-bottom: -266px;
+    margin-left: -87px; }
+  #joinourteam #image2 {
+    transform: rotate(-30deg);
+    margin-top: -256px;
+    padding-left: 529px;
+    margin-bottom: -88px; }
   #joinourteam div {
     background-color: var(--beige);
     border-radius: 16px;
@@ -475,26 +485,55 @@ footer {
     #joinourteam div p {
       padding-top: 16px; }
 
-#question img {
-  max-width: 358px;
-  padding-left: 16px;
-  padding-right: 16px; }
-
-#question div h1 {
-  text-align: center;
-  margin-top: -20px;
-  padding-bottom: 48px; }
-
-#question div ul li aside {
-  display: flex; }
-  #question div ul li aside p {
-    padding-left: 50px;
-    padding-bottom: 24px; }
-
-#question div form {
-  padding-left: 32px;
-  padding-top: 24px; }
-
+#question .rectangle {
+  width: 347px;
+  height: 300px;
+  border: 5.5px solid;
+  border-color: var(--cliffside);
+  margin-left: 16px; }
+  @media (min-width: 768px) {
+    #question .rectangle {
+      width: 756px;
+      height: 290px;
+      margin-left: 28px; } }
+#question div {
+  background-color: var(--white);
+  width: 272px;
+  height: 316px;
+  margin-left: 40px; }
+  @media (min-width: 768px) {
+    #question div {
+      width: 530px;
+      margin-left: 135px; } }
+  #question div h1 {
+    text-align: center;
+    margin-top: -20px;
+    padding-bottom: 48px; }
+    @media (min-width: 768px) {
+      #question div h1 {
+        font-size: 3rem; } }
+    @media (min-width: 576px) {
+      #question div h1 .hide-br {
+        display: show; } }
+  @media (min-width: 576px) and (min-width: 768px) {
+    #question div h1 .hide-br {
+      display: none; } }
+  #question div ul li aside {
+    display: flex; }
+    #question div ul li aside p {
+      padding-left: 50px;
+      padding-bottom: 24px; }
+      @media (min-width: 768px) {
+        #question div ul li aside p {
+          font-size: 1.125rem;
+          align-content: center; } }
+  #question div form {
+    padding-left: 20px;
+    padding-top: 24px; }
+    @media (min-width: 768px) {
+      #question div form {
+        padding-left: 140px;
+        font-size: 1.125rem; } }
 #plantimg div {
   padding-left: 118px; }
   #plantimg div img {
@@ -506,6 +545,9 @@ footer {
   #services h1 {
     padding-bottom: 16px;
     text-align: center; }
+    @media (min-width: 768px) {
+      #services h1 {
+        font-size: 3rem; } }
   #services article ul {
     display: grid;
     gap: 16px; }
@@ -524,16 +566,49 @@ footer {
             padding: 0px; } }
 #signup {
   padding-bottom: 56px; }
-  #signup img {
-    max-width: 358px;
-    padding-left: 16px;
-    padding-right: 16px; }
-  #signup div h1 {
-    text-align: center;
-    margin-top: -20px;
-    padding-bottom: 32px; }
-  #signup div p {
-    text-align: center; }
-  #signup div form {
-    padding-left: 32px;
-    padding-top: 24px; }
+  #signup .rectangle {
+    width: 347px;
+    height: 135px;
+    border: 5.5px solid;
+    border-color: var(--cliffside);
+    margin-left: 16px; }
+    @media (min-width: 768px) {
+      #signup .rectangle {
+        width: 756px;
+        height: 156px;
+        margin-left: 28px; } }
+  #signup div {
+    background-color: var(--white);
+    width: 264px;
+    height: 147px;
+    margin-left: 40px; }
+    @media (min-width: 768px) {
+      #signup div {
+        width: 310px;
+        height: 167px;
+        margin-left: 240px; } }
+    #signup div h1 {
+      text-align: center;
+      margin-top: -20px;
+      padding-bottom: 32px; }
+      @media (min-width: 768px) {
+        #signup div h1 {
+          font-size: 3rem; } }
+    #signup div p {
+      text-align: center; }
+      @media (min-width: 768px) {
+        #signup div p {
+          font-size: 1.125rem; } }
+      @media (min-width: 576px) {
+        #signup div p .hide-br {
+          display: show; } }
+  @media (min-width: 576px) and (min-width: 768px) {
+    #signup div p .hide-br {
+      display: none; } }
+    #signup div form {
+      padding-left: 20px;
+      padding-top: 24px; }
+      @media (min-width: 768px) {
+        #signup div form {
+          font-size: 1.125rem;
+          padding-top: 40px; } }
