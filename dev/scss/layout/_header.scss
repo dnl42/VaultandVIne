@@ -2,30 +2,44 @@
     Header
 ============= */
 header{
-    div{
-       text-align: center;
-    //    display: grid;
-    //    grid-template-columns: 25px auto 25px 25px;
-    //    grid-area: " r1 r2 r3 r4";
-
-    //    #r1{
-    //        grid-area: r1;
-    //    }
-
-    //    #r2{
-    //        grid-area: r2;
-    //    }
-
-    //    #r3{
-    //         grid-area: r3;
-    //     }
-
-    //     #r4{
-    //         grid-area: r4;
-    //     }
-       aside{
-           display: flex;
+        
+        div{
            
-       }
+            text-align: center;
+            aside{
+                display: flex;
+
+                #r1{
+                    @include lg{
+                        display: none;
+                    }
+                }
+                #r2{
+                    
+                }
+                #r3{
+
+                }
+                #r4{
+
+                }
+
+            }
+         }
     }
-}
+    
+    #fullheader{
+        div{
+            ul{
+                
+                li{
+                    display: inline-block; 
+
+
+                }
+            }
+            
+            
+        }
+    
+    }

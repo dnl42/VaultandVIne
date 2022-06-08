@@ -418,6 +418,11 @@ header div {
   text-align: center; }
   header div aside {
     display: flex; }
+    @media (min-width: 1024px) {
+      header div aside #r1 {
+        display: none; } }
+#fullheader div ul li {
+  display: inline-block; }
 
 /* =============
     Footer
