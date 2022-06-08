@@ -205,6 +205,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/services\/cafe-slider.jpg" : {
+      "ft" : 16384,
+      "iS" : 98616,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/services\/cafe-slider.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/services\/ourstory_service.jpg" : {
       "ft" : 16384,
       "iS" : 77349,
@@ -214,6 +227,19 @@
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/services\/ourstory-slider.jpg" : {
+      "ft" : 16384,
+      "iS" : 76024,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/services\/ourstory-slider.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -231,12 +257,38 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/services\/plant-slider.jpg" : {
+      "ft" : 16384,
+      "iS" : 112721,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/services\/plant-slider.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/services\/shop_service.jpg" : {
       "ft" : 16384,
       "iS" : 79629,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/services\/shop_service.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/services\/shop-slider.jpg" : {
+      "ft" : 16384,
+      "iS" : 82742,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/services\/shop-slider.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,

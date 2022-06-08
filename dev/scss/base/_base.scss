@@ -12,7 +12,10 @@ ul{
 }
 
 .content-spacing{
-padding-top: 56px;
+    padding-top: 56px;
+    @include md{
+        padding-top: 72px;
+    }
 }
 
 
@@ -22,7 +25,7 @@ padding-top: 56px;
     grid-template-areas: ". grid .";
 
     @include xxl{
-        rid-template-columns: auto 1440px auto;
+        grid-template-columns: auto 1440px auto;
     }
 
     >div{

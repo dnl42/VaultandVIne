@@ -1,42 +1,66 @@
 #services {
     padding-bottom: 56px;
+    display: grid;
+    justify-content: center;
 
     h1 {
         padding-bottom: 16px;
         text-align: center;
-        @include md{
+
+        @include md {
             font-size: rem-calc(48);
         }
     }
 
     article {
-
+        
         ul {
             display: grid;
             gap: 16px;
 
-            @include md{
+            @include md {
                 grid-area: services;
-                grid-template-columns: repeat(2,1fr) ;
+                grid-template-columns: repeat(2, 1fr);
                 padding-left: 130px;
                 padding-right: 130px;
             }
 
+            @include lg {
+                grid-template-columns: repeat(4, 1fr);
+               
+            }
 
-            li {
-                text-align: center;
-              
-
-                h2 {
-                    padding: 24px 0 56px;
-                    @include md{
-                        padding: 0px;
-                    }
-                }
+            #r1 {
+                
+            }
+            
+            #r2{
 
             }
+
+            #r3{
+
+            }
+
+            #r4{
+                
+            }
+
+                li {
+                    text-align: center;
+
+
+                    h2 {
+                        padding: 24px 0 56px;
+
+                        @include md {
+                            padding: 0px;
+                        }
+                    }
+
+                }
+            }
+
         }
 
     }
-
-}

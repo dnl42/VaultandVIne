@@ -1,24 +1,28 @@
 #question {
+    display: grid;
+    justify-content: center;
+    
 
     .rectangle {
         width: 347px;
         height: 300px;
         border: 5.5px solid;
         border-color: var(--cliffside);
-        margin-left: 16px;
+        // margin-left: 16px;
 
         @include md {
             width: 756px;
             height: 290px;
-            margin-left: 28px;
+            // margin-left: 28px;
         }
     }
 
     div {
         background-color: var(--white);
         width: 272px;
-        height: 316px;
+        height: 328px;
         margin-left: 40px;
+        margin-top: -328px;
 
         @include md {
             width: 530px;
@@ -27,7 +31,6 @@
 
         h1 {
             text-align: center;
-            margin-top: -20px;
             padding-bottom: 48px;
 
             @include md {
@@ -77,19 +80,13 @@
 }
 
 #plantimg {
+   display: grid;
+   justify-content: center;
     div {
         img {
             height: 185px;
             width: 291px;
         }
-
-        // display: grid;
-        // grid-template-columns: 24px auto 24px;
-        padding-left: 118px;
-
-
-
-
     }
 
 }

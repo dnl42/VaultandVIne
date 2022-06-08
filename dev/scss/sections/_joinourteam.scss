@@ -1,40 +1,43 @@
-#joinourteam{
-    padding-left: 118px;
-    // display: grid;
-    // grid-template-columns: 119px auto 119px;
-    // grid-template-areas: '. joinourteam .';
+#joinourteam {
     
+    article{
+        display: grid;
+        justify-content: center;
+        padding-top: 36px;
+        padding-bottom: 36px;
 
-    #image1{
+    }
+
+    #image1 {
         transform: rotate(-47deg);
         margin-bottom: -266px;
-        margin-left: -87px;
-
+        margin-left: -600px;
     }
 
-    #image2{
+    #image2 {
         transform: rotate(-30deg);
         margin-top: -256px;
-       padding-left: 529px;
-       margin-bottom: -88px;
-        
+        padding-left: 529px;
+        margin-bottom: -88px;
     }
 
-    div{
+    div {
         background-color: var(--beige);
         border-radius: 16px;
         height: 181px;
         width: 596px;
-        
-       text-align: center;
-       h1{
-        font-size: rem-calc(48);
-        padding-top: 24px;
-       }
-       p{
-        padding-top: 16px;
 
-       }
+        text-align: center;
+
+        h1 {
+            font-size: rem-calc(48);
+            padding-top: 24px;
+        }
+
+        p {
+            padding-top: 16px;
+
+        }
     }
-    
+
 }

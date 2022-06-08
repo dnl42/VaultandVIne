@@ -1,18 +1,19 @@
 #signup {
     padding-bottom: 56px;
+    display: grid;
+    justify-content: center;
 
     .rectangle {
         width: 347px;
         height: 135px;
         border: 5.5px solid;
         border-color: var(--cliffside);
-        margin-left: 16px;
         
-
+    
         @include md {
             width: 756px;
             height: 156px;
-            margin-left: 28px;
+           
         }
 
 
@@ -21,13 +22,15 @@
     div {
         background-color: var(--white);
         width: 264px;
-        height: 147px;
+        height: 146px;
         margin-left: 40px;
+        margin-top: -146px;
 
         @include md {
             width: 310px;
-            height: 167px;
+            height: 168px;
             margin-left: 240px;
+            margin-top: -168px;
         }
 
         h1 {

@@ -1,28 +1,30 @@
 #info{
     background-color: var(--laurel);
-    padding: 24px 16px 24px 16px;
- 
-    div{
+    padding: 16px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+  
+    
+    article{
         h3{
             text-align: center;
-            padding: 16px;
+            font-size: rem-calc(30);
         }
+    }
+    div{
+        padding: 56px 118px;
         ul{
-            padding-left: 36px;
+            padding-left: 24px;
+            padding-bottom: 56px;
             li{
                 list-style-type: circle;
-                
-                marker{
-        
-                }
                 p{
-                    padding: 4px;
+                    padding-bottom: 4px;
                 }
             }
         }
-       
         p{
-            padding: 16px;
+            
         }
     }
 }
