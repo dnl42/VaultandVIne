@@ -1,3 +1,24 @@
-#help-section{
-    
+#help-section {
+
+    div {
+        aside {
+            background-image: url('../img/tips/help.jpg');
+            height: 355px;
+            width: 355px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px;
+        }
+
+        section{
+            margin: auto;
+            width: 50%;
+            padding-bottom: 56px;
+            p{
+                margin-top: 28px;
+                margin-bottom: 28px;
+            }
+        }
+    }
+
 }

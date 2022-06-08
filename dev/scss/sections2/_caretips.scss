@@ -1,3 +1,128 @@
-#care-tips{
-    
+#care-tips {
+    div {
+        h1 {
+            font-size: rem-calc(36);
+            text-align: center;
+        }
+    }
+
+    article {
+
+
+        ul {
+            display: grid;
+            gap: 56px;
+
+            #r1 {
+                aside{
+                    background-image: url('../img/tips/tip1.jpg');
+                    border-radius: 12px;
+                }
+                @include md {
+                    grid-area: r1;
+                }
+            }
+
+            #r2 {
+                aside{
+                    background-image: url('../img/tips/tip2.jpg');
+                    border-radius: 12px;
+                }
+                @include md {
+                    grid-area: r2;
+                }
+            }
+
+            #r3 {
+                aside{
+                    background-image: url('../img/tips/tip3.jpg');
+                    border-radius: 12px;
+                }
+                @include md {
+                    grid-area: r3;
+                }
+            }
+
+            #r4 {
+                aside{
+                    background-image: url('../img/tips/tip4.jpg');
+                    border-radius: 12px;
+                }
+                @include md {
+                    grid-area: r4;
+                }
+            }
+
+            #r5 {
+                aside{
+                    background-image: url('../img/tips/tip5.jpg');
+                    border-radius: 12px;
+                }
+                @include md {
+                    grid-area: r5;
+                }
+            }
+
+            #r6 {
+                aside{
+                    background-image: url('../img/tips/tip6.jpg');
+                    border-radius: 12px;
+                }
+                @include md {
+                    grid-area: r6;
+                }
+            }
+
+            li {
+                aside{
+                    height: 168px;
+                    width: 358px;
+                    background-size: cover;
+                    background-position: center;
+
+                    margin: 16px;
+                }
+                section{
+                   padding: 16px;
+                   h3{
+                       font-size: rem-calc(18);
+                   }
+                   p{
+                       margin-bottom: 16px;
+                       font-weight: 300;
+                   }
+                   button{
+                       border: none;
+                       text-decoration: underline;
+                       font-size: rem-calc(18);
+                       
+                   }
+                
+                }
+                
+            }
+        }
+
+    }
+}
+
+#buttons{
+    display: grid;
+    justify-content: center;
+    aside{
+        padding-top: 40px;
+        button{
+            height: 40px;
+            width: 40px;
+            background-color: var(--laurel);
+            border: none;
+            border-radius: 8px;
+             margin: 6px;
+            
+            &:hover{
+                background-color: var(--cliffside);
+            }
+        }
+        
+    }
 }

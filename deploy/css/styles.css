@@ -390,8 +390,9 @@ p {
 button {
   cursor: pointer; }
 
-button:focus {
-  outline: none; }
+button {
+  padding: 0;
+  margin: 0; }
 
 /* =============
     Forms
@@ -637,3 +638,129 @@ footer {
         #signup div form {
           font-size: 1.125rem;
           padding-top: 40px; } }
+#intro div h1 {
+  text-align: center;
+  padding-bottom: 24px; }
+
+#plant-types {
+  display: grid;
+  justify-content: center; }
+  #plant-types div ul {
+    display: grid;
+    gap: 16px; }
+    #plant-types div ul li h2 {
+      text-align: center;
+      font-family: 'Italiana', serif;
+      font-size: 1.875rem; }
+    #plant-types div ul li img {
+      border-radius: 12px; }
+
+#care-tips div h1 {
+  font-size: 2.25rem;
+  text-align: center; }
+
+#care-tips article ul {
+  display: grid;
+  gap: 56px; }
+  #care-tips article ul #r1 aside {
+    background-image: url("../img/tips/tip1.jpg");
+    border-radius: 12px; }
+  @media (min-width: 768px) {
+    #care-tips article ul #r1 {
+      grid-area: r1; } }
+  #care-tips article ul #r2 aside {
+    background-image: url("../img/tips/tip2.jpg");
+    border-radius: 12px; }
+  @media (min-width: 768px) {
+    #care-tips article ul #r2 {
+      grid-area: r2; } }
+  #care-tips article ul #r3 aside {
+    background-image: url("../img/tips/tip3.jpg");
+    border-radius: 12px; }
+  @media (min-width: 768px) {
+    #care-tips article ul #r3 {
+      grid-area: r3; } }
+  #care-tips article ul #r4 aside {
+    background-image: url("../img/tips/tip4.jpg");
+    border-radius: 12px; }
+  @media (min-width: 768px) {
+    #care-tips article ul #r4 {
+      grid-area: r4; } }
+  #care-tips article ul #r5 aside {
+    background-image: url("../img/tips/tip5.jpg");
+    border-radius: 12px; }
+  @media (min-width: 768px) {
+    #care-tips article ul #r5 {
+      grid-area: r5; } }
+  #care-tips article ul #r6 aside {
+    background-image: url("../img/tips/tip6.jpg");
+    border-radius: 12px; }
+  @media (min-width: 768px) {
+    #care-tips article ul #r6 {
+      grid-area: r6; } }
+  #care-tips article ul li aside {
+    height: 168px;
+    width: 358px;
+    background-size: cover;
+    background-position: center;
+    margin: 16px; }
+  #care-tips article ul li section {
+    padding: 16px; }
+    #care-tips article ul li section h3 {
+      font-size: 1.125rem; }
+    #care-tips article ul li section p {
+      margin-bottom: 16px;
+      font-weight: 300; }
+    #care-tips article ul li section button {
+      border: none;
+      text-decoration: underline;
+      font-size: 1.125rem; }
+
+#buttons {
+  display: grid;
+  justify-content: center; }
+  #buttons aside {
+    padding-top: 40px; }
+    #buttons aside button {
+      height: 40px;
+      width: 40px;
+      background-color: var(--laurel);
+      border: none;
+      border-radius: 8px;
+      margin: 6px; }
+      #buttons aside button:hover {
+        background-color: var(--cliffside); }
+
+#green-thumb div {
+  background-color: var(--laurel);
+  height: 234px; }
+  #green-thumb div h1 {
+    text-align: center;
+    font-size: 2.25rem;
+    padding-bottom: 24px; }
+  #green-thumb div p {
+    text-align: center;
+    font-weight: 300; }
+  #green-thumb div #image1 {
+    width: 110px;
+    margin-bottom: -100px; }
+  #green-thumb div #image2 {
+    width: 110px;
+    margin-left: 270px;
+    margin-top: -300px; }
+
+#help-section div aside {
+  background-image: url("../img/tips/help.jpg");
+  height: 355px;
+  width: 355px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px; }
+
+#help-section div section {
+  margin: auto;
+  width: 50%;
+  padding-bottom: 56px; }
+  #help-section div section p {
+    margin-top: 28px;
+    margin-bottom: 28px; }
