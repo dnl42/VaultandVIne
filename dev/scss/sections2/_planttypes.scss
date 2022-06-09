@@ -1,17 +1,101 @@
-#plant-types{
+#plant-types {
     display: grid;
     justify-content: center;
-    div{
-        ul{
+
+    div {
+        padding-bottom: 56px;
+        @include md {
             display: grid;
-            gap: 16px;
-            li{
-                h2{
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: ". plant-types .";
+        }
+
+        ul {
+            display: grid;
+            gap: 20px;
+
+            @include md {
+                grid-area: plant-types;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas:
+                "r1 r2"
+                "r3 r4";
+                //grid-template-rows: repeat(2,1fr);
+
+                
+            }
+
+            #r1 {
+                aside {
+                    background-image: url('../img/plants/indoor.jpg');
+                    border-radius: 12px;
+                }
+
+                @include md {
+                    grid-area: r1;
+                }
+            }
+
+            #r2 {
+                aside {
+                    background-image: url('../img/plants/outdoor.jpg');
+                    border-radius: 12px;
+                }
+
+                @include md {
+                    grid-area: r2;
+                }
+            }
+
+            #r3 {
+                aside {
+                    background-image: url('../img/plants/succulents.jpg');
+                    border-radius: 12px;
+                }
+
+                @include md {
+                    grid-area: r3;
+                }
+            }
+
+            #r4 {
+                aside {
+                    background-image: url('../img/plants/flowers.jpg');
+                    border-radius: 12px;
+                }
+
+                @include md {
+                    grid-area: r4;
+                }
+            }
+
+            li {
+                aside {
+                    height: 192px;
+                    width: 358px;
+                    background-size: cover;
+                    background-position: center;
+                     @include xl{
+                        height: 316px;
+                        width: 511px;
+                     }
+                     @include xxl{
+                        height: 316px;
+                        width: 511px;
+                     }
+                }
+
+                h2 {
                     text-align: center;
                     font-family: 'Italiana', serif;
                     font-size: rem-calc(30);
+                     @include md{
+                         font-size: rem-calc(36);
+                     }
+                    
                 }
-                img{
+
+                img {
                     border-radius: 12px;
                 }
             }

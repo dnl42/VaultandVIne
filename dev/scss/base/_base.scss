@@ -22,7 +22,7 @@ ul{
 .css-grid-global{
     display: grid;
     grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". grid .";
+   grid-template-areas: ". grid .";
 
     @include xxl{
         grid-template-columns: auto 1440px auto;

@@ -418,12 +418,57 @@ textarea {
 header div {
   text-align: center; }
   header div aside {
-    display: flex; }
-    @media (min-width: 1024px) {
-      header div aside #r1 {
-        display: none; } }
+    display: grid;
+    grid-template-columns: 80px auto 50px 50px;
+    grid-template-areas: "r1 r2 r3 r4";
+    padding-top: 24px; }
+    header div aside #r1 {
+      margin-top: 40px;
+      margin-left: -24px;
+      grid-area: r1; }
+      @media (min-width: 768px) {
+        header div aside #r1 {
+          margin-left: 24px; } }
+      @media (min-width: 1024px) {
+        header div aside #r1 {
+          display: none; } }
+    header div aside #r2 {
+      grid-area: r2; }
+      header div aside #r2 a {
+        text-decoration: none;
+        color: var(--black); }
+        header div aside #r2 a a:hover {
+          cursor: pointer; }
+    header div aside #r3 {
+      margin-top: 40px;
+      grid-area: r3; }
+      @media (min-width: 768px) {
+        header div aside #r3 {
+          margin-right: 32px; } }
+    header div aside #r4 {
+      margin-top: 40px;
+      grid-area: r4; }
+      @media (min-width: 768px) {
+        header div aside #r4 {
+          margin-right: 20px; } }
+    header div aside section h2 {
+      font-weight: 100; }
+
+#fullheader div hr {
+  border: .5px solid black;
+  width: 1000px; }
+
 #fullheader div ul li {
-  display: inline-block; }
+  display: inline-block;
+  margin-right: 52px; }
+  #fullheader div ul li p {
+    font-family: 'Italiana', serif;
+    font-size: 1.5rem; }
+  #fullheader div ul li a {
+    text-decoration: none;
+    color: var(--black); }
+    #fullheader div ul li a a:hover {
+      cursor: pointer; }
 
 /* =============
     Footer
@@ -451,10 +496,33 @@ footer {
       grid-template-rows: none; } }
   .footer-grid div ul li img {
     padding-bottom: 16px; }
+  .footer-grid div ul li a {
+    text-decoration: none;
+    color: var(--white); }
 
-#hero div img {
-  width: 100%; }
-
+#hero div {
+  background-image: url("../img/hero/heroimg.jpeg");
+  height: 70vw;
+  width: 70vh;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px; }
+  @media (min-width: 768px) {
+    #hero div {
+      height: 65vw;
+      width: 68vh; } }
+  @media (min-width: 1024px) {
+    #hero div {
+      height: 62vw;
+      width: 88vh; } }
+  @media (min-width: 1200px) {
+    #hero div {
+      height: 60vw;
+      width: 101vh; } }
+  @media (min-width: 1400px) {
+    #hero div {
+      height: 60vw;
+      width: 122vh; } }
 #info {
   background-color: var(--laurel);
   padding: 16px;
@@ -638,30 +706,122 @@ footer {
         #signup div form {
           font-size: 1.125rem;
           padding-top: 40px; } }
+@media (min-width: 768px) {
+  #intro div {
+    padding-left: 118px;
+    padding-right: 118px; } }
+
+@media (min-width: 1200px) {
+  #intro div {
+    padding-left: 124px;
+    padding-right: 124px; } }
+
+@media (min-width: 1400px) {
+  #intro div {
+    padding-left: 250px;
+    padding-right: 250px; } }
+
 #intro div h1 {
   text-align: center;
-  padding-bottom: 24px; }
-
+  padding-bottom: 24px;
+  font-size: 2.25rem; }
+  @media (min-width: 768px) {
+    #intro div h1 {
+      font-size: 3rem; } }
+  @media (min-width: 1024px) {
+    #intro div h1 {
+      font-size: 4rem; } }
 #plant-types {
   display: grid;
   justify-content: center; }
-  #plant-types div ul {
-    display: grid;
-    gap: 16px; }
-    #plant-types div ul li h2 {
-      text-align: center;
-      font-family: 'Italiana', serif;
-      font-size: 1.875rem; }
-    #plant-types div ul li img {
-      border-radius: 12px; }
+  #plant-types div {
+    padding-bottom: 56px; }
+    @media (min-width: 768px) {
+      #plant-types div {
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". plant-types ."; } }
+    #plant-types div ul {
+      display: grid;
+      gap: 20px; }
+      @media (min-width: 768px) {
+        #plant-types div ul {
+          grid-area: plant-types;
+          grid-template-columns: 1fr 1fr;
+          grid-template-areas: "r1 r2" "r3 r4"; } }
+      #plant-types div ul #r1 aside {
+        background-image: url("../img/plants/indoor.jpg");
+        border-radius: 12px; }
+      @media (min-width: 768px) {
+        #plant-types div ul #r1 {
+          grid-area: r1; } }
+      #plant-types div ul #r2 aside {
+        background-image: url("../img/plants/outdoor.jpg");
+        border-radius: 12px; }
+      @media (min-width: 768px) {
+        #plant-types div ul #r2 {
+          grid-area: r2; } }
+      #plant-types div ul #r3 aside {
+        background-image: url("../img/plants/succulents.jpg");
+        border-radius: 12px; }
+      @media (min-width: 768px) {
+        #plant-types div ul #r3 {
+          grid-area: r3; } }
+      #plant-types div ul #r4 aside {
+        background-image: url("../img/plants/flowers.jpg");
+        border-radius: 12px; }
+      @media (min-width: 768px) {
+        #plant-types div ul #r4 {
+          grid-area: r4; } }
+      #plant-types div ul li aside {
+        height: 192px;
+        width: 358px;
+        background-size: cover;
+        background-position: center; }
+        @media (min-width: 1200px) {
+          #plant-types div ul li aside {
+            height: 316px;
+            width: 511px; } }
+        @media (min-width: 1400px) {
+          #plant-types div ul li aside {
+            height: 316px;
+            width: 511px; } }
+      #plant-types div ul li h2 {
+        text-align: center;
+        font-family: 'Italiana', serif;
+        font-size: 1.875rem; }
+        @media (min-width: 768px) {
+          #plant-types div ul li h2 {
+            font-size: 2.25rem; } }
+      #plant-types div ul li img {
+        border-radius: 12px; }
 
 #care-tips div h1 {
   font-size: 2.25rem;
   text-align: center; }
+  @media (min-width: 768px) {
+    #care-tips div h1 {
+      font-size: 3rem;
+      padding-bottom: 52px; } }
+@media (min-width: 768px) {
+  #care-tips article {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". care-tips ."; } }
 
 #care-tips article ul {
   display: grid;
   gap: 56px; }
+  @media (min-width: 768px) {
+    #care-tips article ul {
+      gap: 24px;
+      grid-area: care-tips;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas: "r1 r1 r2 r2" "r3 r3 r4 r4"; } }
+  @media (min-width: 1024px) {
+    #care-tips article ul {
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-areas: "r1 r1 r2 r2 r3 r3" "r4 r4 r5 r5 r6 r6"; } }
   #care-tips article ul #r1 aside {
     background-image: url("../img/tips/tip1.jpg");
     border-radius: 12px; }
@@ -704,13 +864,26 @@ footer {
     background-size: cover;
     background-position: center;
     margin: 16px; }
+    @media (min-width: 768px) {
+      #care-tips article ul li aside {
+        margin: 0; } }
   #care-tips article ul li section {
     padding: 16px; }
+    @media (min-width: 768px) {
+      #care-tips article ul li section {
+        padding: 0; } }
     #care-tips article ul li section h3 {
       font-size: 1.125rem; }
+      @media (min-width: 768px) {
+        #care-tips article ul li section h3 {
+          padding-top: 16px;
+          font-size: 1.25rem; } }
     #care-tips article ul li section p {
       margin-bottom: 16px;
       font-weight: 300; }
+      @media (min-width: 768px) {
+        #care-tips article ul li section p {
+          font-size: 1.125rem; } }
     #care-tips article ul li section button {
       border: none;
       text-decoration: underline;
@@ -731,36 +904,37 @@ footer {
       #buttons aside button:hover {
         background-color: var(--cliffside); }
 
-#green-thumb div {
-  background-color: var(--laurel);
-  height: 234px; }
-  #green-thumb div h1 {
-    text-align: center;
-    font-size: 2.25rem;
-    padding-bottom: 24px; }
-  #green-thumb div p {
-    text-align: center;
-    font-weight: 300; }
+#green-thumb {
+  background-color: var(--laurel); }
   #green-thumb div #image1 {
     width: 110px;
     margin-bottom: -100px; }
   #green-thumb div #image2 {
     width: 110px;
     margin-left: 270px;
-    margin-top: -300px; }
+    margin-bottom: -30px; }
+  #green-thumb section h1 {
+    text-align: center;
+    font-size: 2.25rem;
+    padding-bottom: 24px; }
+  #green-thumb section p {
+    text-align: center;
+    font-weight: 300; }
 
-#help-section div aside {
-  background-image: url("../img/tips/help.jpg");
-  height: 355px;
-  width: 355px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 12px; }
-
-#help-section div section {
-  margin: auto;
-  width: 50%;
-  padding-bottom: 56px; }
-  #help-section div section p {
-    margin-top: 28px;
-    margin-bottom: 28px; }
+#help-section div {
+  display: grid;
+  justify-content: center; }
+  #help-section div aside {
+    background-image: url("../img/tips/help.jpg");
+    height: 355px;
+    width: 355px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px; }
+  #help-section div section {
+    margin: auto;
+    width: 50%;
+    padding-bottom: 56px; }
+    #help-section div section p {
+      margin-top: 28px;
+      margin-bottom: 28px; }

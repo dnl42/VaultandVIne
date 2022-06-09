@@ -1,8 +1,32 @@
-#intro{
-    div{
-        h1{
+#intro {
+    div {
+        @include md {
+            padding-left: 118px;
+            padding-right: 118px;
+        }
+
+
+        @include xl {
+            padding-left: 124px;
+            padding-right: 124px;
+        }
+        @include xxl {
+            padding-left: 250px;
+            padding-right: 250px;
+        }
+
+        h1 {
             text-align: center;
             padding-bottom: 24px;
+            font-size: rem-calc(36);
+
+            @include md {
+                font-size: rem-calc(48);
+            }
+
+            @include lg {
+                font-size: rem-calc(64);
+            }
         }
     }
 }

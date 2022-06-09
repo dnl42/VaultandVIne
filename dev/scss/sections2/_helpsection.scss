@@ -1,6 +1,12 @@
 #help-section {
-
+   
     div {
+        display: grid;
+        justify-content: center;
+        @include xl{
+       
+        }
+
         aside {
             background-image: url('../img/tips/help.jpg');
             height: 355px;
@@ -10,11 +16,12 @@
             border-radius: 12px;
         }
 
-        section{
+        section {
             margin: auto;
             width: 50%;
             padding-bottom: 56px;
-            p{
+
+            p {
                 margin-top: 28px;
                 margin-bottom: 28px;
             }

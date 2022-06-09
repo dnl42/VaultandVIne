@@ -1,8 +1,33 @@
 #hero{
     div{
-        img{
-        width: 100%;
-        }
+       
+            background-image: url("../img/hero/heroimg.jpeg");
+            height: 70vw;
+            width: 70vh ;
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px;
+
+            @include md{
+              height: 65vw;
+              width: 68vh ;
+            }
+
+            @include lg{
+                height: 62vw;
+                width: 88vh ;
+            }
+
+            @include xl{
+                height: 60vw;
+                width: 101vh ;
+            }
+
+            @include xxl{
+                height: 60vw;
+                width: 122vh ;
+            }
+
     }
    
 }

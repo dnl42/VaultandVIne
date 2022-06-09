@@ -1,45 +1,117 @@
 /* =============
     Header
 ============= */
-header{
-        
-        div{
-           
-            text-align: center;
-            aside{
-                display: flex;
+header {
 
-                #r1{
-                    @include lg{
-                        display: none;
+    div {
+
+
+        text-align: center;
+
+        aside {
+            // display: flex;
+            display: grid;
+            grid-template-columns: 80px auto 50px 50px;
+            grid-template-areas:
+                "r1 r2 r3 r4";
+            padding-top: 24px;
+
+
+
+            #r1 {
+                margin-top: 40px;
+                margin-left: -24px;
+                grid-area: r1;
+
+                @include md {
+                    margin-left: 24px;
+                }
+
+                @include lg {
+                    display: none;
+                }
+            }
+
+            #r2 {
+                a {
+                    text-decoration: none;
+                    color: var(--black);
+
+                    a:hover {
+                        cursor: pointer;
                     }
                 }
-                #r2{
-                    
-                }
-                #r3{
 
-                }
-                #r4{
+                @include md {}
 
-                }
-
+                grid-area: r2;
             }
-         }
-    }
-    
-    #fullheader{
-        div{
-            ul{
-                
-                li{
-                    display: inline-block; 
 
+            #r3 {
+                margin-top: 40px;
+                grid-area: r3;
 
+                @include md {
+                    margin-right: 32px;
                 }
             }
-            
-            
+
+            #r4 {
+                margin-top: 40px;
+                grid-area: r4;
+
+                @include md {
+                    margin-right: 20px;
+                }
+            }
+
+            section {
+                h1 {
+
+                }
+
+                h2 {
+                    font-weight: 100;
+                }
+            }
         }
-    
     }
+}
+
+#fullheader {
+    div {
+        hr{
+            border: .5px solid black;
+            width: 1000px;
+        }
+        ul {
+
+            // position: fixed;
+            // top: 0;
+            // width: 100%;
+            li {
+               display: inline-block;
+               margin-right: 52px;
+
+                p{
+                    font-family: 'Italiana', serif;
+                    font-size: rem-calc(24);
+                }
+                
+                a {
+                    text-decoration: none;
+                    color: var(--black);
+
+                    a:hover {
+                        cursor: pointer;
+                    }
+                }
+
+            }
+        }
+    }
+
+
+
+
+}
