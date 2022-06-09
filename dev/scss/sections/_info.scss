@@ -12,11 +12,16 @@
         }
     }
     div{
-        padding: 56px 118px;
+        padding-top: 36px;
+
+        @include md{
+            padding: 56px 118px;
+        }
         ul{
             padding-left: 24px;
             padding-bottom: 56px;
             li{
+                
                 list-style-type: circle;
                 p{
                     padding-bottom: 4px;
@@ -24,7 +29,7 @@
             }
         }
         p{
-            
+            padding-bottom: 36px;
         }
     }
 }
